@@ -1,0 +1,14 @@
+version: "3"
+services:
+  service_jekyll:
+    # image: jekyll/jekyll:3
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: jekyll-local
+    volumes:
+      - ./doc:/srv/src:Z
+    # - ./out:/srv/jekyll/_site
+    # command: bundle exec jekyll serve --host 0.0.0.0 --watch --verbose --trace --livereload #--incremental
+    ports:
+      - "4000:4000"
