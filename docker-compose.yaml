@@ -7,8 +7,10 @@ services:
       dockerfile: dockerfile
     container_name: jekyll-local
     volumes:
-      - ./doc:/srv/src:Z
-    # - ./out:/srv/jekyll/_site
-    # command: bundle exec jekyll serve --host 0.0.0.0 --watch --verbose --trace --livereload #--incremental
+      - ./doc:/srv/src:rw
+      - ./.out:/srv/jekyll:rw
+    # command: bundle exec jekyll serve --host 0.0.0.0 -s /srv/src -d /srv/jekyll --verbose --trace --watch --livereload --force_polling
+    command: jekyll serve --host 0.0.0.0 -s /srv/src -d /srv/jekyll --verbose --trace --watch --livereload --force_polling
     ports:
       - "4000:4000"
+      - "35729:35729"
