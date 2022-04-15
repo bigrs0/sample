@@ -1,2 +1,13 @@
+# remote_theme: pages-themes/cayman@v0.2.0
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
+
 repository: bigrs0/sample
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman # https://github.com/pages-themes/cayman
+#theme: jekyll-theme-minimal
+
+title: The title of your site
+description: A short description of your site's purpose
+
+github:
+  is_project_page: false
