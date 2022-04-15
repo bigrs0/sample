@@ -1,8 +1,18 @@
 ## Welcome to GitHub Pages
 
-[subfile](./sub2)
+[./sub2.md](sub2.md)
 
-[subdir](./sub/index)
+[./sub2.html](sub2.html)
+
+[./sub2 (no ext)](sub2)
+
+[./sub/index.md](./sub/index.md)
+
+[./sub/index.html](./sub/index.html)
+
+[./sub/index](./sub/index)
+
+[./sub/](./sub/)
 
 You can use the [editor on GitHub](https://github.com/bigrs0/sample/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
